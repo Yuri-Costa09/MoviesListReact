@@ -1,0 +1,67 @@
+body {
+  background: #141414;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.movie-card {
+  width: 300px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
+  margin: 1rem;
+}
+
+.movie-poster {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  border-radius: 10px;
+}
+
+.list-movies {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212020;
+  padding: 15px 20px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #2204c9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search button:hover {
+  background-color: #1b03a1;
+}
+
+.search-icon {
+  width: 25px;
+}

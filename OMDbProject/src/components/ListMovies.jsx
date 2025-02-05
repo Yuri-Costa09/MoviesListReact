@@ -9,11 +9,8 @@ function ListMovies({ movies }) {
           key={movie.imdbID}
           moviePoster={movie.Poster}
           movieTitle={movie.Title}
-          movieDescription={movie.Plot}
           movieYear={movie.Year}
           movieIMDBRating={movie.imdbRating}
-          movieRated={movie.Rated}
-          movieRuntime={movie.Runtime}
         />
       ))}
     </div>
@@ -26,12 +23,8 @@ ListMovies.propTypes = {
       imdbID: PropTypes.string.isRequired,
       Poster: PropTypes.string,
       Title: PropTypes.string,
-      Plot: PropTypes.string,
       Year: PropTypes.string,
-      imdbRating: PropTypes.string,
-      Rated: PropTypes.string,
-      Runtime: PropTypes.string,
-    })
+    }),
   ).isRequired,
 };
 
